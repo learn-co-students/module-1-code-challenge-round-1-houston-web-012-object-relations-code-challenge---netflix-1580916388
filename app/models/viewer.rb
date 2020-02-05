@@ -11,5 +11,18 @@ class Viewer
   def self.all
     @@all
   end
+
+  def reviews
+    Review.all.select{ |review| review.viewer == self}
+  end
   
+  def reviewed_movies
+    reviews.map{|review|review.movie}.uniq
+  end
+  # def reviewed_movie?(movie)
+  #   return true if reviews
+  # end
+  # def rate_movie(movie,rating)
+    
+  # end
 end
