@@ -23,6 +23,10 @@ r3 = Review.new(v1, m3, 3)
 r4 = Review.new(v2, m2, 5)
 
 r4 = Review.new(v3, m3, 1)
+cdcdc = Review.new(v3, m2, 1)
+cdfgvt = Review.new(v3, m1, 1)
+
+
 
 
 binding.pry

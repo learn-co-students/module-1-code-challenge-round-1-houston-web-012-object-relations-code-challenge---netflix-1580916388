@@ -35,6 +35,18 @@ class Viewer
       Review.new(self, movie, rating)
     end
   end
+
+  # def self.most_active
+  #   max_reviews = self.all.max_by {|viewer| viewer.reviews.count}.reviews.count
+  #   # if max reviews are 3, v1 and v2 both have 3 reviews this will still only return the first v1
+  #   most_active_arr = self.all.select {|viewer| viewer.reviews.count == max_reviews}
+  #   if most_active_arr.count > 1
+  #     puts "#{most_active_arr.join(" ")} are tied!!"
+  #     # change to call a name not an object
+  #   else
+  #     most_active_arr[0]
+  #   end
+  # end
   
 end
 
